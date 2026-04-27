@@ -16,4 +16,4 @@
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Waleed-Zaheer&theme=transparent&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ---
-[![](https://komarev.com/ghpvc/?username=Waleed-Zaheer&icon=0&color=1)](https://visitcount.itsvg.in)
+[![](https://komarev.com/ghpvc/?username=Waleed-Zaheer&style=flat&color=0e75b6&label=Profile+Views)](https://github.com/Waleed-Zaheer)
