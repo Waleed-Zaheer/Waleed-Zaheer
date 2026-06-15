@@ -3,6 +3,7 @@
 # 💫 About Me:
 🔭 I'm currently working on enterprise full-stack web apps — B2B platforms, data management systems, and real-time features with Socket.io<br>👯 I'm looking to collaborate on open-source MERN/Next.js projects, developer tools, or anything with a clean UI challenge<br>🤝 I'm looking for help with advanced backend architecture patterns and system design at scale<br>🌱 I'm currently learning ASP.NET Core and deepening my knowledge of cloud infrastructure (AWS)<br>💬 Ask me about React, Next.js, TypeScript, REST APIs, RBAC, or building production-ready full-stack apps<br>⚡ Fun fact: I built an AR-powered virtual try-on e-commerce platform as my final year project — before AR was cool
 
+[![Profile Views](https://komarev.com/ghpvc/?username=waleed-zaheer&label=Profile%20views&color=1E90FF&style=flat)](https://github.com/waleed-zaheer)
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/waleed-zaheer-x073/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:waleed.zaheer073@gmail.com) 
