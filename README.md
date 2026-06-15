@@ -12,12 +12,24 @@
 
 # 📊 GitHub Stats:
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mian-roshan&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=waleed-zaheer&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true" alt="stats" />
 </p>
-<br/>
-![](https://streak-stats.demolab.com/?user=Waleed-Zaheer&theme=transparent&hide_border=false)
-<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Waleed-Zaheer&theme=transparent&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=waleed-zaheer&theme=tokyonight&hide_border=false" alt="streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=waleed-zaheer&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="top langs" />
+</p>
 
 ---
-[![](https://komarev.com/ghpvc/?username=Waleed-Zaheer&style=flat&color=0e75b6&label=Profile+Views)](https://github.com/Waleed-Zaheer)
+
+## 📈 Contribution Activity Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=waleed-zaheer&theme=tokyo-night&hide_border=true&area=true&count_private=true" alt="activity graph" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=waleed-zaheer&theme=tokyonight" alt="profile details" />
+</p>
