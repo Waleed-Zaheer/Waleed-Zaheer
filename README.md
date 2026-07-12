@@ -14,11 +14,11 @@
 # 📊 GitHub Stats:
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=waleed-zaheer&theme=tokyonight&hide_border=false" alt="streak" />
+  <img src="./assets/streak-stats.svg" alt="streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=waleed-zaheer&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="top langs" />
+  <img src="./assets/top-langs.svg" alt="top langs" />
 </p>
 
 ---
@@ -26,9 +26,11 @@
 ## 📈 Contribution Activity Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=waleed-zaheer&theme=tokyo-night&hide_border=true&area=true&count_private=true" alt="activity graph" />
+  <img src="./assets/activity-graph.svg" alt="activity graph" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=waleed-zaheer&theme=tokyonight" alt="profile details" />
+  <img src="./assets/profile-details.svg" alt="profile details" />
 </p>
+
+<sub>Stats above are cached snapshots refreshed daily by <a href="./.github/workflows/refresh-stats.yml">a GitHub Action</a> — they're served as static files from this repo, so a third-party rendering service being down never leaves a broken image here.</sub>

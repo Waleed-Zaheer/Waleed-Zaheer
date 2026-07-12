@@ -1,0 +1,24 @@
+<svg width="300" height="168" viewBox="0 0 300 168" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #70a5fd; }
+  </style>
+  <rect x="0.5" y="0.5" rx="4.5" width="299" height="167" fill="#1a1b27" stroke="#414868" stroke-opacity="1" />
+  <text x="25" y="35" class="title">Most Used Languages</text>
+  <g><rect x="25.00" y="58" width="173.23" height="8" fill="#f1e05a" />
+<rect x="198.23" y="58" width="65.67" height="8" fill="#3178c6" />
+<rect x="263.90" y="58" width="7.00" height="8" fill="#563d7c" />
+<rect x="270.90" y="58" width="2.91" height="8" fill="#f34b7d" />
+<rect x="273.81" y="58" width="1.19" height="8" fill="#e34c26" />
+</g>
+  <g>
+      <circle cx="30" cy="82" r="5" fill="#f1e05a" />
+      <text x="41" y="86" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">JavaScript 69.3%</text>
+      <circle cx="155" cy="82" r="5" fill="#3178c6" />
+      <text x="166" y="86" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">TypeScript 26.3%</text>
+      <circle cx="30" cy="106" r="5" fill="#563d7c" />
+      <text x="41" y="110" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">CSS 2.8%</text>
+      <circle cx="155" cy="106" r="5" fill="#f34b7d" />
+      <text x="166" y="110" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">C++ 1.2%</text>
+      <circle cx="30" cy="130" r="5" fill="#e34c26" />
+      <text x="41" y="134" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">HTML 0.5%</text></g>
+</svg>

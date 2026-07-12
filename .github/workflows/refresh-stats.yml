@@ -1,0 +1,79 @@
+name: Refresh README stats
+
+# Regenerates the SVGs the README embeds and commits them as static files
+# in ./assets. The README links to those local files, never to a live
+# third-party rendering service — so a service outage (e.g. the frequent
+# github-readme-stats.vercel.app 503s) can never show up as a broken image
+# on the profile page. Worst case, a run fails and the previous good SVG
+# just stays until the next successful run.
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # daily, off the hour to avoid GitHub's cron rush
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/refresh-stats.yml"
+      - "scripts/generate-top-langs.mjs"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate top languages card (talks directly to GitHub's API)
+        env:
+          GH_USERNAME: waleed-zaheer
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-top-langs.mjs
+
+      - name: Refresh remaining cards from their live generators
+        shell: bash
+        run: |
+          set -u
+          mkdir -p assets
+
+          fetch_svg() {
+            local url="$1"
+            local out="$2"
+            local tmp
+            tmp="$(mktemp)"
+            if curl -fsSL --max-time 30 -A "waleed-zaheer-readme" "$url" -o "$tmp" \
+               && [ -s "$tmp" ] && grep -q "<svg" "$tmp"; then
+              mv "$tmp" "$out"
+              echo "updated $out"
+            else
+              echo "::warning::fetch failed for $out, keeping previous cached version"
+              rm -f "$tmp"
+            fi
+          }
+
+          fetch_svg "https://streak-stats.demolab.com/?user=waleed-zaheer&theme=tokyonight&hide_border=false" \
+            assets/streak-stats.svg
+
+          fetch_svg "https://github-readme-activity-graph.vercel.app/graph?username=waleed-zaheer&theme=tokyo-night&hide_border=true&area=true&count_private=true" \
+            assets/activity-graph.svg
+
+          fetch_svg "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=waleed-zaheer&theme=tokyonight" \
+            assets/profile-details.svg
+
+      - name: Commit changes if any
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh readme stats [skip ci]"
+          file_pattern: "assets/*.svg"
