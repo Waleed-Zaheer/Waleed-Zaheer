@@ -26,7 +26,13 @@
 ## 📈 Contribution Activity Graph
 
 <p align="center">
-  <img src="./assets/activity-graph.svg" alt="activity graph" />
+  <a href="https://raw.githubusercontent.com/Waleed-Zaheer/Waleed-Zaheer/main/assets/activity-graph.svg">
+    <img src="./assets/activity-graph.svg" alt="activity graph" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>💡 <a href="https://raw.githubusercontent.com/Waleed-Zaheer/Waleed-Zaheer/main/assets/activity-graph.svg">Open the interactive version</a> — hover any point to see that day's contributions. (GitHub renders README images statically, so tooltips only work on the opened SVG.)</sub>
 </p>
 
 <p align="center">
