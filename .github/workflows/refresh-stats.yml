@@ -16,6 +16,7 @@ on:
     paths:
       - ".github/workflows/refresh-stats.yml"
       - "scripts/generate-top-langs.mjs"
+      - "scripts/add-graph-tooltips.mjs"
 
 permissions:
   contents: write
@@ -71,6 +72,9 @@ jobs:
 
           fetch_svg "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=waleed-zaheer&theme=tokyonight" \
             assets/profile-details.svg
+
+      - name: Add hover tooltips to the activity graph points
+        run: node scripts/add-graph-tooltips.mjs
 
       - name: Commit changes if any
         uses: stefanzweifel/git-auto-commit-action@v5
