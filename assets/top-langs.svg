@@ -4,19 +4,19 @@
   </style>
   <rect x="0.5" y="0.5" rx="4.5" width="299" height="167" fill="#1a1b27" stroke="#414868" stroke-opacity="1" />
   <text x="25" y="35" class="title">Most Used Languages</text>
-  <g><rect x="25.00" y="58" width="190.07" height="8" fill="#3178c6" />
-<rect x="215.07" y="58" width="52.31" height="8" fill="#f1e05a" />
-<rect x="267.38" y="58" width="6.37" height="8" fill="#563d7c" />
-<rect x="273.75" y="58" width="0.84" height="8" fill="#f34b7d" />
-<rect x="274.60" y="58" width="0.40" height="8" fill="#e34c26" />
+  <g><rect x="25.00" y="58" width="191.46" height="8" fill="#3178c6" />
+<rect x="216.46" y="58" width="50.48" height="8" fill="#f1e05a" />
+<rect x="266.94" y="58" width="6.79" height="8" fill="#563d7c" />
+<rect x="273.73" y="58" width="0.81" height="8" fill="#f34b7d" />
+<rect x="274.55" y="58" width="0.45" height="8" fill="#e34c26" />
 </g>
   <g>
       <circle cx="30" cy="82" r="5" fill="#3178c6" />
-      <text x="41" y="86" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">TypeScript 76.0%</text>
+      <text x="41" y="86" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">TypeScript 76.6%</text>
       <circle cx="155" cy="82" r="5" fill="#f1e05a" />
-      <text x="166" y="86" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">JavaScript 20.9%</text>
+      <text x="166" y="86" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">JavaScript 20.2%</text>
       <circle cx="30" cy="106" r="5" fill="#563d7c" />
-      <text x="41" y="110" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">CSS 2.5%</text>
+      <text x="41" y="110" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">CSS 2.7%</text>
       <circle cx="155" cy="106" r="5" fill="#f34b7d" />
       <text x="166" y="110" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">C++ 0.3%</text>
       <circle cx="30" cy="130" r="5" fill="#e34c26" />
