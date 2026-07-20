@@ -9,7 +9,11 @@ name: Refresh README stats
 
 on:
   schedule:
-    - cron: "17 3 * * *" # daily, off the hour to avoid GitHub's cron rush
+    # Every 2 hours, off the hour to avoid GitHub's cron rush. Daily wasn't
+    # enough — it snapshots "today" once, early, so a day's contributions
+    # make afterward don't show until the *next* day's run. This keeps
+    # today's bar catching up throughout the day instead.
+    - cron: "17 */2 * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
