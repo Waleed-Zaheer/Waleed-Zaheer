@@ -53,29 +53,40 @@ jobs:
           set -u
           mkdir -p assets
 
+          # $3 (optional) is a substring that must appear in a *valid* card,
+          # e.g. "Total Contributions" for the streak card. These generators
+          # respond with a perfectly valid <svg> error card (rate limits,
+          # upstream GitHub API hiccups, etc.) that would otherwise sail
+          # through a bare "<svg" check and clobber the last good render.
+          # Retries a few times since these errors are often transient.
           fetch_svg() {
             local url="$1"
             local out="$2"
-            local tmp
-            tmp="$(mktemp)"
-            if curl -fsSL --max-time 30 -A "waleed-zaheer-readme" "$url" -o "$tmp" \
-               && [ -s "$tmp" ] && grep -q "<svg" "$tmp"; then
-              mv "$tmp" "$out"
-              echo "updated $out"
-            else
-              echo "::warning::fetch failed for $out, keeping previous cached version"
+            local marker="${3:-}"
+            local tmp attempt
+            for attempt in 1 2 3; do
+              tmp="$(mktemp)"
+              if curl -fsSL --max-time 30 -A "waleed-zaheer-readme" "$url" -o "$tmp" \
+                 && [ -s "$tmp" ] && grep -q "<svg" "$tmp" \
+                 && { [ -z "$marker" ] || grep -qF "$marker" "$tmp"; }; then
+                mv "$tmp" "$out"
+                echo "updated $out"
+                return 0
+              fi
               rm -f "$tmp"
-            fi
+              [ "$attempt" -lt 3 ] && sleep 5
+            done
+            echo "::warning::fetch failed for $out after 3 attempts, keeping previous cached version"
           }
 
           fetch_svg "https://streak-stats.demolab.com/?user=waleed-zaheer&theme=tokyonight&hide_border=false" \
-            assets/streak-stats.svg
+            assets/streak-stats.svg "Total Contributions"
 
           fetch_svg "https://github-readme-activity-graph.vercel.app/graph?username=waleed-zaheer&theme=tokyo-night&hide_border=true&area=true&count_private=true" \
-            assets/activity-graph.svg
+            assets/activity-graph.svg "ct-chart"
 
           fetch_svg "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=waleed-zaheer&theme=tokyonight" \
-            assets/profile-details.svg
+            assets/profile-details.svg "gpsc-root"
 
       - name: Add hover tooltips to the activity graph points
         run: node scripts/add-graph-tooltips.mjs
