@@ -4,21 +4,21 @@
   </style>
   <rect x="0.5" y="0.5" rx="4.5" width="299" height="167" fill="#1a1b27" stroke="#414868" stroke-opacity="1" />
   <text x="25" y="35" class="title">Most Used Languages</text>
-  <g><rect x="25.00" y="58" width="188.40" height="8" fill="#3178c6" />
-<rect x="213.40" y="58" width="53.84" height="8" fill="#f1e05a" />
-<rect x="267.24" y="58" width="6.54" height="8" fill="#563d7c" />
-<rect x="273.78" y="58" width="0.78" height="8" fill="#f34b7d" />
-<rect x="274.56" y="58" width="0.44" height="8" fill="#e34c26" />
+  <g><rect x="25.00" y="58" width="196.77" height="8" fill="#3178c6" />
+<rect x="221.77" y="58" width="45.83" height="8" fill="#f1e05a" />
+<rect x="267.60" y="58" width="6.37" height="8" fill="#563d7c" />
+<rect x="273.97" y="58" width="0.66" height="8" fill="#f34b7d" />
+<rect x="274.63" y="58" width="0.37" height="8" fill="#e34c26" />
 </g>
   <g>
       <circle cx="30" cy="82" r="5" fill="#3178c6" />
-      <text x="41" y="86" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">TypeScript 75.4%</text>
+      <text x="41" y="86" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">TypeScript 78.7%</text>
       <circle cx="155" cy="82" r="5" fill="#f1e05a" />
-      <text x="166" y="86" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">JavaScript 21.5%</text>
+      <text x="166" y="86" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">JavaScript 18.3%</text>
       <circle cx="30" cy="106" r="5" fill="#563d7c" />
-      <text x="41" y="110" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">CSS 2.6%</text>
+      <text x="41" y="110" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">CSS 2.5%</text>
       <circle cx="155" cy="106" r="5" fill="#f34b7d" />
       <text x="166" y="110" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">C++ 0.3%</text>
       <circle cx="30" cy="130" r="5" fill="#e34c26" />
-      <text x="41" y="134" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">HTML 0.2%</text></g>
+      <text x="41" y="134" font-size="12" fill="#a9b1d6" font-family="Segoe UI, Ubuntu, Sans-Serif">HTML 0.1%</text></g>
 </svg>
