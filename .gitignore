@@ -2,3 +2,7 @@ branch_structure.json
 temp_auto_push.bat
 temp_interactive_push.bat
 .gitignore
+
+# Local planning docs — not meant for the public repo
+REQUIRED.md
+IMPROVEMENTS.md
