@@ -4,8 +4,8 @@
   </style>
   <rect x="0.5" y="0.5" rx="4.5" width="299" height="167" fill="#1a1b27" stroke="#414868" stroke-opacity="1" />
   <text x="25" y="35" class="title">Most Used Languages</text>
-  <g><rect x="25.00" y="58" width="213.76" height="8" fill="#3178c6" />
-<rect x="238.76" y="58" width="29.39" height="8" fill="#f1e05a" />
+  <g><rect x="25.00" y="58" width="213.77" height="8" fill="#3178c6" />
+<rect x="238.77" y="58" width="29.38" height="8" fill="#f1e05a" />
 <rect x="268.15" y="58" width="6.09" height="8" fill="#563d7c" />
 <rect x="274.24" y="58" width="0.47" height="8" fill="#f34b7d" />
 <rect x="274.71" y="58" width="0.29" height="8" fill="#e34c26" />
