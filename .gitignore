@@ -6,3 +6,5 @@ temp_interactive_push.bat
 # Local planning docs — not meant for the public repo
 REQUIRED.md
 IMPROVEMENTS.md
+config.bat
+node_modules
